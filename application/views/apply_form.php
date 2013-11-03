@@ -195,25 +195,15 @@
 					<div class="control-group">
 						<label class="control-label"><strong class="fc_red">*</strong>Headshot photo – a friendly photo with (semi)formal or graduation attire</label>
 						<div class="controls">
-							<div id="btn_upload_photo-button" class="uploadify-button" style="height: 30px; line-height: 30px; width: 120px;">
-								<span class="uploadify-button-text">SELECT FILES<input type="file" name="userfile" size="20" class="button" /></span>
-							</div>
-
+							<span class="uploadify-button">SELECT FILES<input type="file" name="photofile" id="photo-file"/></span><br>
+							<input name="photo-url" id="photo-url" class="input-xlarge" type="text" value="" disabled="">
 						</div>
-						<input name="photo-url" id="photo-url" type="hidden" value="">
 					</div>
 					<div class="control-group">
 						<label class="control-label"><strong class="fc_red">*</strong>Your resume / CV (PDF&nbsp;file only)</label>
 						<div class="controls">
-							<div id="btn_upload_cv" class="uploadify" style="height: 30px; width: 120px;">
-								<div id="btn_upload_cv-button" class="uploadify-button " style="height: 30px; line-height: 30px; width: 120px;">
-									<span class="uploadify-button-text">SELECT FILES</span>
-								</div>
-							</div>
-							<div id="btn_upload_cv-queue" class="uploadify-queue"></div>
-							<div id="cv-queue" class="uploadify-queue"></div>
-							<input name="cv-url" id="cv-url" type="hidden" value="">
-							<div id="cv-show" class="hidden upload-show"></div>
+							<span class="uploadify-button">SELECT FILES<input type="file" name="cvfile" id="cv-file"/></span><br>
+							<input name="cv-url" id="cv-url" class="input-xlarge" type="text" value="" disabled="">
 						</div>
 					</div>
 					<div class="control-group">

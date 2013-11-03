@@ -139,6 +139,17 @@ input[type="text"], input[type="email"], textarea, select {
 	width: 270px !important;;
 }
 
+/* Chrome Firefox Opera Safari IE9+ */
+input:disabled{
+	background-color: #F5F5F5;
+	color:#ACA899;
+}
+/* IE8- */
+input[disabled]{
+	background-color: #F5F5F5;
+	color:#ACA899;
+}
+
 select {
 	width: 220px;
 	background-color: #fff;
@@ -279,24 +290,24 @@ a {
 	cursor: pointer;
 }
 
-.uploadify-button-text {
+.uploadify-button {
 	display: inline-block;
-	width: 100px;
+	width: 120px;
 	height: 30px;
 	line-height: 30px;
-	background: #ddd;
 	text-align: center;
 	overflow: hidden;
 	position: relative;
 }
 
-.uploadify-button-text input {
+.uploadify-button input {
 	opacity: 0;
 	filter: alpha(opacity=0);
 	font-size: 100px;
 	position: absolute;
 	top: 0;
 	right: 0;
+	cursor: pointer;
 }
 
 
