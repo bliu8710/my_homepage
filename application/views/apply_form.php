@@ -16,7 +16,7 @@
 	<!--<div class="banner"><img src="<?php echo base_url()?>/public/img/banner.jpg" /></div>-->
 
 	<div class="container">
-		<form id="mentorApplyForm" class="form form-horizontal clearfix" method="post" action="http://mysite.com/index.php/mentor/apply">
+		<form id="mentorApplyForm" class="form form-horizontal clearfix" method="post" action="http://mysite.com/index.php/mentor/apply" enctype="multipart/form-data">
 
 			<div id="div-step1" class="clearfix">
 				<div class="span_left">
@@ -195,14 +195,12 @@
 					<div class="control-group">
 						<label class="control-label"><strong class="fc_red">*</strong>Headshot photo – a friendly photo with (semi)formal or graduation attire</label>
 						<div class="controls">
-							<div id="btn_upload_photo-button" class="uploadify-button " style="height: 30px; line-height: 30px; width: 120px;">
-								<span class="uploadify-button-text">SELECT FILES</span>
+							<div id="btn_upload_photo-button" class="uploadify-button" style="height: 30px; line-height: 30px; width: 120px;">
+								<span class="uploadify-button-text">SELECT FILES<input type="file" name="userfile" size="20" class="button" /></span>
 							</div>
+
 						</div>
-						<div id="btn_upload_photo-queue" class="uploadify-queue"></div>
-						<div id="photo-queue" class="uploadify-queue"></div>
 						<input name="photo-url" id="photo-url" type="hidden" value="">
-						<div id="photo-show" class="hidden upload-show"></div>
 					</div>
 					<div class="control-group">
 						<label class="control-label"><strong class="fc_red">*</strong>Your resume / CV (PDF&nbsp;file only)</label>
