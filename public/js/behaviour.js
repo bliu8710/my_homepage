@@ -2,7 +2,7 @@ $(document).ready(init);
 
 function init () {
 	//$("#div-step2,#div-step3,#div-step4,.form-alert").hide();
-	$("#div-step1,#div-step2,#div-step4,.form-alert,#photo-url,#cv-url").hide();
+	$("#div-step2,#div-step3,#div-step4,.form-alert,#photo-url,#cv-url").hide();
 	
 	// step 1 next
 	$("#div-step1 button.btn-next").click(function(){
@@ -39,6 +39,10 @@ function init () {
 		});
 	});
 
+	if ($("#photo-file").val() && $("#photo-file").val().length > 0) {
+		$("#photo-url").show();
+		$("#photo-url").val($("#photo-file").val());
+	}
 	$("#photo-file").change(function(){
 		var value = $(this).val();
 		if (value && value.length > 0) {
@@ -47,6 +51,10 @@ function init () {
 		}
 	});
 
+	if ($("#cv-file").val() && $("#cv-file").val().length > 0) {
+		$("#cv-url").show();
+		$("#cv-url").val($("#cv-file").val());
+	}
 	$("#cv-file").change(function(){
 		var value = $(this).val();
 		if (value && value.length > 0) {

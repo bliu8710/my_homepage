@@ -14,9 +14,9 @@
 <body>
 	<div class="banner"><p>GLOBAL MENTORING</p></div>
 	<!--<div class="banner"><img src="<?php echo base_url()?>/public/img/banner.jpg" /></div>-->
-
+	<?php echo validation_errors(); ?>
 	<div class="container">
-		<form id="mentorApplyForm" class="form form-horizontal clearfix" method="post" action="http://mysite.com/index.php/mentor/apply" enctype="multipart/form-data">
+		<form id="mentorApplyForm" class="form form-horizontal clearfix" method="post" action="http://mysite.com/index.php/mentor/apply_exec" enctype="multipart/form-data">
 
 			<div id="div-step1" class="clearfix">
 				<div class="span_left">
@@ -25,35 +25,35 @@
 					<fieldset class="well">
 						<div class="control-group">
 							<label><strong class="fc_red">*</strong><strong>First Name</strong></label>
-							<input name="firstname" id="firstname" type="text">
+							<input name="firstname" id="firstname" type="text" value="<?php echo set_value('firstname'); ?>">
 						</div>
 						<div class="control-group">
 							<label><strong class="fc_red">*</strong><strong>Last Name</strong></label>
-							<input name="lastname" id="lastname" type="text">
+							<input name="lastname" id="lastname" type="text" value="<?php echo set_value('lastname'); ?>">
 						</div>
 						<div class="control-group">
 							<label><strong class="fc_red">*</strong>Primary Email Address</label>
-							<input class="input-p-level" name="email" id="email" type="email">
+							<input class="input-p-level" name="email" id="email" type="email" value="<?php echo set_value('email'); ?>">
 						</div>
 						<div class="control-group">
 							<label><strong class="fc_red">*</strong>University Email Address</label>
-							<input class="input-p-level" name="email2" id="email2" type="email">
+							<input class="input-p-level" name="email2" id="email2" type="email" value="<?php echo set_value('email2'); ?>">
 						</div>
 						<div class="control-group">
 							<label><strong class="fc_red">*</strong>Cell Number</label>
-							<input name="phone" id="phone" type="text" placeholder="01-206-948-6353">
+							<input name="phone" id="phone" type="text" placeholder="01-206-948-6353" value="<?php echo set_value('phone'); ?>">
 						</div>
 						<div class="control-group">
 							<label><strong class="fc_red">*</strong>Skype Name</label>
-							<input name="skype" id="skype" type="text">
+							<input name="skype" id="skype" type="text" value="<?php echo set_value('skype'); ?>">
 						</div>
 						<div class="control-group">
 							<label><strong class="fc_red">*</strong>LinkedIn Profile Link</label>
-							<input class="input-block-level" name="linkedin" id="linkedin" type="text">
+							<input class="input-block-level" name="linkedin" id="linkedin" type="text" value="<?php echo set_value('linkedin'); ?>">
 						</div>
 						<div class="control-group">
 							<label><strong class="fc_red">*</strong>Facebook Page Link</label>
-							<input class="input-block-level" name="linkedin" id="linkedin" type="text">
+							<input class="input-block-level" name="facebook" id="facebook" type="text" value="<?php echo set_value('facebook'); ?>">
 						</div>
 						<div class="control-group">
 							<label class="checkbox">
@@ -244,7 +244,7 @@
 					<div class="form-actions">
 						<button type="button" class="btn btn-large btn-prev">&lt; Prev</button>
 						&nbsp;&nbsp;&nbsp;
-						<button id="btn_submit" type="button" class="btn btn-success btn-large btn-next">Submit</button>
+						<button id="btn_submit" type="summit" class="btn btn-success btn-large btn-next">Submit</button>
 					</div>
 				</fieldset>
 			</div> <!-- end of id="div-step2" -->
