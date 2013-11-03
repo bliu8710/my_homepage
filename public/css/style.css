@@ -18,6 +18,12 @@ body, button, input, select, textarea {
 	font-family: tahoma, arial, 'Hiragino Sans GB' sans-serif;
 }
 
+.hidden {
+	display: none;
+	visibility: hidden;
+}
+
+
 .banner {
 	margin-top: 0;
 	position: relative;
@@ -106,7 +112,7 @@ strong {
 	font-weight: bold;
 }
 
-input[type="text"], input[type="email"], textarea {
+input[type="text"], input[type="email"], textarea, select {
 	width: 206px;
 	padding: 4px 6px;
 	font-size: 14px;
@@ -133,6 +139,12 @@ input[type="text"], input[type="email"], textarea {
 	width: 270px !important;;
 }
 
+select {
+	width: 220px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+}
+
 h3 {
 	font-size: 24.5px;
 	line-height: 40px;
@@ -157,6 +169,10 @@ textarea {
 	height: auto;
 }
 
+a {
+	text-decoration: none;
+}
+
 .form-actions {
 	padding: 19px 20px 20px;
 	margin-top: 20px;
@@ -172,6 +188,10 @@ textarea {
 }
 
 .btn {
+	display: inline-block;
+	padding: 4px 12px;
+	margin-bottom: 0;
+	line-height: 20px;
 	color: #333;
 	text-align: center;
 	text-shadow: 0 1px 1px rgba(255,255,255,0.75);
@@ -183,6 +203,9 @@ textarea {
 	border: 1px solid #ccc;
 	border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
 	border-bottom-color: #b3b3b3;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
 }
 
 .btn-large {
@@ -237,4 +260,38 @@ textarea {
 .radio, .checkbox {
 	min-height: 20px;
 	padding-left: 20px;
+}
+
+.uploadify-button {
+	background-color: #505050;
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #505050), color-stop(1, #707070));
+	background-position: center top;
+	background-repeat: no-repeat;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	border: 2px solid #808080;
+	color: #FFF;
+	font: bold 12px Arial, Helvetica, sans-serif;
+	text-align: center;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	width: 100%;
+	cursor: pointer;
+}
+
+.alert {
+	padding: 8px 35px 8px 14px;
+	margin-bottom: 20px;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+	background-color: #fcf8e3;
+	border: 1px solid #fbeed5;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.alert-success {
+	color: #468847;
+	background-color: #dff0d8;
+	border-color: #d6e9c6;
 }
