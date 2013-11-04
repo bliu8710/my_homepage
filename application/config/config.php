@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://mysite.com/';
+$config['base_url']	= 'http://topofferedu.com/';
 
 /*
 |--------------------------------------------------------------------------
@@ -26,7 +26,8 @@ $config['base_url']	= 'http://mysite.com/';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+//$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------

@@ -49,9 +49,9 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = 'pwd';
-$db['default']['database'] = 'topoffer';
+$db['default']['username'] = 'mplusedu_admin';
+$db['default']['password'] = 'mplusedu2013';
+$db['default']['database'] = 'mplusedu_topoffer';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;

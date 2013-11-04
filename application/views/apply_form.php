@@ -16,7 +16,7 @@
 	<!--<div class="banner"><img src="<?php echo base_url()?>/public/img/banner.jpg" /></div>-->
 	<?php echo validation_errors(); ?>
 	<div class="container">
-		<form id="mentorApplyForm" class="form form-horizontal clearfix" method="post" action="http://mysite.com/index.php/mentor/apply_exec" enctype="multipart/form-data">
+		<form id="mentorApplyForm" class="form form-horizontal clearfix" method="post" action="<?php echo base_url()?>/mentor/apply_exec" enctype="multipart/form-data">
 
 			<div id="div-step1" class="clearfix">
 				<div class="span_left">
@@ -252,7 +252,7 @@
 			<div id="div-step4" class="span offset2">
 				<div class="alert alert-success">
 					<h3>Thank you for applying to join TopOffer!!</h3>
-					<a href="http://mysite.com/index.php/mentor/apply" class="btn btn-success">Back To Home Page</a><br>
+					<a href="<?php echo base_url()?>/mentor/apply" class="btn btn-success">Back To Home Page</a><br>
 					<br>
 					<p>This message confirms that we have received your application. <br>
 					<br>

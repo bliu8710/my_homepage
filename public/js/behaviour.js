@@ -26,11 +26,11 @@ function init () {
 	});
 
 	// step 3 next
-	$("#div-step3 button.btn-next").click(function(){
+	/*$("#div-step3 button.btn-next").click(function(){
 		$('#div-step3').fadeOut("fast", function() {
 			$('#div-step4').fadeIn("fast");
 		});
-	});
+	});*/
 
 	// step 3 prev
 	$("#div-step3 button.btn-prev").click(function(){
