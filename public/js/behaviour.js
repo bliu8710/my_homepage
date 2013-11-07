@@ -62,4 +62,14 @@ function init () {
 			$("#cv-url").val(value);
 		}
 	});
+
+
+	$("#languages_other_box").click(function() {
+		if( $(this).prop("checked")) {
+ 			$("#languages_other").removeAttr("disabled"); 
+		} else {
+			$("#languages_other").attr("disabled","disabled");
+			$("#languages_other").val('');
+		}
+    });
 }

@@ -12,9 +12,15 @@
 	<title>Mentor apply - Top Offer Edu</title>
 </head>
 <body>
-	<div class="banner"><p>GLOBAL MENTORING</p></div>
+	<!--<div class="banner"><p>GLOBAL MENTORING</p></div>-->
 	<!--<div class="banner"><img src="<?php echo base_url()?>/public/img/banner.jpg" /></div>-->
 	<?php echo validation_errors(); ?>
+
+	<div class="left">
+	<div class="logo">
+		<img src="<?php echo base_url()?>/public/img/logo.jpg" /></div>
+	</div>
+</div>
 	<div class="container">
 		<form id="mentorApplyForm" class="form form-horizontal clearfix" method="post" action="<?php echo base_url()?>/mentor/apply_exec" enctype="multipart/form-data">
 
@@ -25,35 +31,35 @@
 					<fieldset class="well">
 						<div class="control-group">
 							<label><strong class="fc_red">*</strong><strong>First Name</strong></label>
-							<input name="firstname" id="firstname" type="text" value="<?php echo set_value('firstname'); ?>">
+							<input name="firstname" id="firstname" type="text" placeholder="Caroline" value="<?php echo set_value('firstname'); ?>">
 						</div>
 						<div class="control-group">
 							<label><strong class="fc_red">*</strong><strong>Last Name</strong></label>
-							<input name="lastname" id="lastname" type="text" value="<?php echo set_value('lastname'); ?>">
+							<input name="lastname" id="lastname" type="text" placeholder="Brown" value="<?php echo set_value('lastname'); ?>">
 						</div>
 						<div class="control-group">
 							<label><strong class="fc_red">*</strong>Primary Email Address</label>
-							<input class="input-p-level" name="email" id="email" type="email" value="<?php echo set_value('email'); ?>">
+							<input class="input-p-level" name="email" id="email" type="email"  placeholder="caroline.brown@gmail.com" value="<?php echo set_value('email'); ?>">
 						</div>
 						<div class="control-group">
 							<label><strong class="fc_red">*</strong>University Email Address</label>
-							<input class="input-p-level" name="email2" id="email2" type="email" value="<?php echo set_value('email2'); ?>">
+							<input class="input-p-level" name="email2" id="email2" type="email" placeholder="caroline.brown1@cam.ac.uk"  value="<?php echo set_value('email2'); ?>">
 						</div>
 						<div class="control-group">
 							<label><strong class="fc_red">*</strong>Cell Number</label>
-							<input name="phone" id="phone" type="text" placeholder="01-206-948-6353" value="<?php echo set_value('phone'); ?>">
+							<input name="phone" id="phone" type="text" placeholder="01-204-389-7402" value="<?php echo set_value('phone'); ?>">
 						</div>
 						<div class="control-group">
 							<label><strong class="fc_red">*</strong>Skype Name</label>
-							<input name="skype" id="skype" type="text" value="<?php echo set_value('skype'); ?>">
+							<input name="skype" id="skype" type="text" placeholder="Caroline Brown" value="<?php echo set_value('skype'); ?>">
 						</div>
 						<div class="control-group">
-							<label><strong class="fc_red">*</strong>LinkedIn Profile Link</label>
-							<input class="input-block-level" name="linkedin" id="linkedin" type="text" value="<?php echo set_value('linkedin'); ?>">
+							<label>LinkedIn Profile Link</label>
+							<input class="input-block-level" name="linkedin" id="linkedin" type="text" placeholder="http://www.linkedin.com/profile/..." value="<?php echo set_value('linkedin'); ?>">
 						</div>
 						<div class="control-group">
-							<label><strong class="fc_red">*</strong>Facebook Page Link</label>
-							<input class="input-block-level" name="facebook" id="facebook" type="text" value="<?php echo set_value('facebook'); ?>">
+							<label>Facebook Page Link</label>
+							<input class="input-block-level" name="facebook" id="facebook" type="text" placeholder="http://www.facebook.com/c.b..." value="<?php echo set_value('facebook'); ?>">
 						</div>
 						<div class="control-group">
 							<label class="checkbox">
@@ -77,6 +83,8 @@
 						essay edits, resume building, interview preparation, and 
 						scholarship advice.</p>
 					</article>
+					<br>
+					<br>
 					<h3><strong>Work part-time in TopOffer</strong></h3>
 					<article>
 						<p>We are inviting students and alumni from universities/colleges 
@@ -84,7 +92,12 @@
 						consultants. You can mentor international applicants anywhere, 
 						anytime with a commission-based payment.</p>
 					</article>
-					<h3><strong>Thanks for taking a moment to apply to join TopOffer!</strong></h3>
+					<br>
+					<br>
+					<h3><strong>Thanks!</strong></h3>
+					<article>
+						<p>Thanks for taking a moment to apply to join TopOffer!</p>
+					</article>
 				</div>
 
 			</div> <!-- end of id="div-step1" -->
@@ -93,45 +106,51 @@
 				<legend>Step 2/3 -TopOffer Consultant Profile</legend>
 				<fieldset class="well">
 					<div class="control-group">
-						<label class="control-label"><strong class="fc_red">*</strong><strong>Hometown / Nationality:</strong></label>
+						<label class="control-label"><strong class="fc_red">*</strong><strong>Hometown / Nationality</strong></label>
 						<div class="controls">
-							<input type="text" name="hometown" id="hometown" placeholder="Seattle / USA">
+							<input type="text" name="hometown" id="hometown" placeholder="Seattle/USA">
 						</div>
 					</div>
 					<div class="control-group">
-						<label class="control-label"><strong class="fc_red">*</strong><strong>Current Location:</strong></label>
+						<label class="control-label"><strong class="fc_red">*</strong><strong>Current Location</strong></label>
 						<div class="controls">
-							<input name="location" id="location" type="text">
+							<input name="location" id="location" type="text" placeholder="New York/USA">
 						</div>
 					</div>
 					<div class="control-group">
-						<label class="control-label"><strong class="fc_red">*</strong><strong>Undergraduate Name,Subject / Degree and Year</strong> <font class="fc_main">(e.g., B.S. Yale | Statistics | 2012)</font></label>
+						<label class="control-label"><strong class="fc_red">*</strong><strong>Undergraduate School Name,<br>  Subject, Degree, Graduation Year</strong></label>
 						<div class="controls">
-							<input type="text" class="input-xlarge" name="degree" id="degree" placeholder="B.S. Yale | Statistics | 2012">
+							<input type="text" name="ugra_school" id="ugra_school" placeholder="Yale" style="width:120px">
+							<input type="text" name="ugra_subject" id="ugra_subject" placeholder="Physics" style="width:140px">
+							<input type="text" name="ugra_degree" id="ugra_degree" placeholder="B.S." style="width:35px">
+							<input type="text" name="ugra_year" id="ugra_year" placeholder="2012" style="width:35px">
 						</div>
 					</div>
 					<div class="control-group">
-						<label class="control-label">Graduate School Name,Subject / Degree and Year <font class="fc_main">(e.g., Ph. D. Stanford | Biology |2016)</font></label>
+						<label class="control-label">Graduate School Name, Subject,<br> Degree, Graduation Year</label>
 						<div class="controls">
-							<input type="text" name="degree2" id="degree2" placeholder="Ph. D. Stanford | Biology | 2016" class="input-xlarge">
+							<input type="text" name="gra_school" id="gra_school" placeholder="Penn U" style="width:120px">
+							<input type="text" name="gra_subject" id="gra_subject" placeholder="History" style="width:140px">
+							<input type="text" name="gra_degree" id="gra_degree" placeholder="Ph.D" style="width:35px">
+							<input type="text" name="gra_year" id="gra_year" placeholder="2014" style="width:35px">
 						</div>
 					</div>
 					<div class="control-group">
-						<label class="control-label">What other universities (Undergraduate / Graduate) were you admitted to? <font class="fc_main">(e.g., Harvard, Princeton, Williams, UChicago)</font></label>
+						<label class="control-label">What other universities (Undergraduate /<br> Graduate) were you admitted to?</label>
 						<div class="controls">
-							<input type="text" name="degree3" id="degree3" placeholder="Harvard, Princeton, Williams, UChicago" class="input-xlarge">
+							<input type="text" name="degree3" id="degree3" placeholder="Harvard, Princeton, Williams, UChicago" style="width:384px">
 						</div>
 					</div>
 					<div class="control-group">
-						<label class="control-label"><strong class="fc_red">*</strong><strong>Work History → Previous Employer(s) and Position(s)</strong> <font class="fc_main">(e.g., Summer Analyst, JP Morgan)</font></label>
+						<label class="control-label"><strong class="fc_red">*</strong><strong>Work History(Previous Employers<br> and Positions)</strong></label>
 						<div class="controls">
-							<textarea type="text" name="job" id="job" placeholder="Summer Analyst, JP Morgan"></textarea>
+							<textarea type="text" name="job" id="job" placeholder="Summer Analyst, Goldman Sachs"></textarea>
 						</div>
 					</div>
 					<div class="control-group">
-						<label class="control-label">University Activities + Extracurriculars <font class="fc_main">(e.g., VP of Campus Investment Club, Member of Film Society, Baseball Team) </font> </label>
+						<label class="control-label">University Activities / Extracurriculars</label>
 						<div class="controls">
-							<textarea type="text" name="activities" id="activities" placeholder="VP of Campus Investment Club, Member of Film Society, Baseball Team"></textarea>
+							<textarea type="text" name="activities" id="activities" placeholder="VP of Campus Investment Club, Member of Poetry Society, Football Team"></textarea>
 						</div>
 					</div>
 					<div class="control-group">
@@ -207,7 +226,7 @@
 						</div>
 					</div>
 					<div class="control-group">
-						<label class="control-label">How did you hear about ChaseFuture? </label>
+						<label class="control-label">How did you hear about TopOffer? </label>
 						<div class="controls">
 							<select name="hearabout" id="hearabout">
 								<option value="Email" selected="selected"> Email </option>

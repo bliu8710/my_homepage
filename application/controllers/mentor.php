@@ -45,8 +45,17 @@ class Mentor extends CI_Controller {
 						'facebook'         => $_POST['facebook'],
 						'hometown'         => $_POST['hometown'],
 						'location'         => $_POST['location'],
-						'degree'           => $_POST['degree'],
-						'degree2'          => $_POST['degree2'],
+
+						'ugra_school'      => $_POST['ugra_school'],
+						'ugra_subject'     => $_POST['ugra_subject'],
+						'ugra_degree'      => $_POST['ugra_degree'],
+						'ugra_year'        => $_POST['ugra_year'],
+
+						'gra_school'      => $_POST['gra_school'],
+						'gra_subject'     => $_POST['gra_subject'],
+						'gra_degree'      => $_POST['gra_degree'],
+						'gra_year'        => $_POST['gra_year'],
+						
 						'degree3'          => $_POST['degree3'],
 						'job'              => $_POST['job'],
 						'activities'       => $_POST['activities'],
@@ -150,16 +159,6 @@ class Mentor extends CI_Controller {
 				'label'   => 'Skype Name', 
 				'rules'   => 'required'
 			),
-			array(
-				'field'   => 'linkedin', 
-				'label'   => 'LinkedIn Profile Link', 
-				'rules'   => 'required'
-			),
-			array(
-				'field'   => 'facebook', 
-				'label'   => 'Facebook Page Link', 
-				'rules'   => 'required'
-			),
 			/*array(
 				'field'   => 'agree', 
 				'label'   => 'The agreement to "Terms of Employment"', 
@@ -176,8 +175,23 @@ class Mentor extends CI_Controller {
 				'rules'   => 'required'
 			),
 			array(
-				'field'   => 'degree', 
-				'label'   => 'Undergraduate Name,Subject / Degree and Year', 
+				'field'   => 'ugra_school', 
+				'label'   => 'Undergraduate School Name', 
+				'rules'   => 'required'
+			),
+			array(
+				'field'   => 'ugra_subject', 
+				'label'   => 'Undergraduate Subject', 
+				'rules'   => 'required'
+			),
+			array(
+				'field'   => 'ugra_degree', 
+				'label'   => 'Undergraduate Degree', 
+				'rules'   => 'required'
+			),
+			array(
+				'field'   => 'ugra_year', 
+				'label'   => 'Undergraduate Graduation Year', 
 				'rules'   => 'required'
 			),
 			array(

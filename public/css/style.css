@@ -61,16 +61,30 @@ body, button, input, select, textarea {
 	box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
 }
 
+.left {
+	float: left;
+	width: 22%;
+}
+
+.logo {
+	width: 150px;
+}
+
+.logo img {
+	width: 100%;
+	padding: 40px 20px 0px 50%;
+}
+
 .container {
-	padding: 20px 20px 70px 20px;
-	width: 1170px;
+	padding: 30px 20px 70px 20px;
+	width: 78%;
 	margin-right: auto;
 	margin-left: auto;
 }
 
 #div-step1 .span_left {
 	float: left;
-	width: 470px;
+	width: 30%;
 }
 
 #div-step1 .span_right {
@@ -175,9 +189,10 @@ p {
 }
 
 textarea {
-	min-height: 200px;
-	width: 80%;
+	min-height: 100px;
+	width: 96%;
 	height: auto;
+	resize: none;
 }
 
 a {

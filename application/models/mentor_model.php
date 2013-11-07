@@ -19,8 +19,17 @@ class Mentor_model extends CI_Model{
 		//Step 2
 		$this->hometown = $param['hometown'];
 		$this->location = $param['location'];
-		$this->degree = $param['degree'];
-		$this->degree2 = $param['degree2'];
+
+		$this->ugra_school = $param['ugra_school'];
+		$this->ugra_subject = $param['ugra_subject'];
+		$this->ugra_degree = $param['ugra_degree'];
+		$this->ugra_year = $param['ugra_year'];
+
+		$this->gra_school = $param['gra_school'];
+		$this->gra_subject = $param['gra_subject'];
+		$this->gra_degree = $param['gra_degree'];
+		$this->gra_year = $param['gra_year'];
+
 		$this->degree3 = $param['degree3'];
 		$this->job = $param['job'];
 		$this->activities = $param['activities'];
