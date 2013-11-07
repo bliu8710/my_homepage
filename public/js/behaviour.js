@@ -71,5 +71,29 @@ function init () {
 			$("#languages_other").attr("disabled","disabled");
 			$("#languages_other").val('');
 		}
-    });
+	});
+
+    $( "#dialog-message" ).dialog({
+		modal: true,
+		buttons: {
+			Ok: function() {
+				$( this ).dialog( "close" );
+			}
+      	},
+		autoOpen: false,
+		show: {
+			effect: "blind",
+			duration: 500
+		},
+		hide: {
+			effect: "blind",
+			duration: 300
+		},
+		width : 560,
+
+	});
+
+	$( "#agreement" ).click(function() {
+		$( "#dialog-message" ).dialog( "open" );
+	});
 }

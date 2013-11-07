@@ -8,6 +8,8 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>/public/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>/public/css/style.css">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
 	<script src="<?php echo base_url()?>/public/js/behaviour.js"></script>
 	<title>Mentor apply - Top Offer Edu</title>
 </head>
@@ -64,7 +66,7 @@
 						<div class="control-group">
 							<label class="checkbox">
 							<input id="agree" name="agree" value="" type="checkbox">
-							I Agree <a href="" data-toggle="modal">"Terms of Employment"</a> </label>
+							I Agree <a id="agreement" href="#" data-toggle="modal">"Terms of Employment"</a> </label>
 						</div>
 						<div class="alert alert-block form-alert"></div>
 						<div class="form-actions">
@@ -287,5 +289,14 @@
 
 		</form>
 	</div> <!-- end of id="container" -->
+	<div id="dialog-message" title="Terms of Service Overview!">
+		<p>
+			We post your short answers, select demographic information, bio and academic credentials on
+			TopOfferEdu.com because we are building the leading online admissions marketplace, content
+			source and social network. Prospective clients and users want to know who they are working
+			with and learning from. We value your trust and will work to earn it each day as we expand
+			university access together.
+		</p>
+	</div>
 </body>
 </html>
