@@ -59,7 +59,7 @@ class Mentor extends CI_Controller {
 						'degree3'          => $_POST['degree3'],
 						'job'              => $_POST['job'],
 						'activities'       => $_POST['activities'],
-						'languages'        => $_POST['languages'],// 3 data will come
+						'languages'        => $this->make_languages_string(),
 						'hearabout'        => $_POST['hearabout'],
 						'friend'           => $_POST['friend'],
 						'blog1'            => $_POST['blog1'],
@@ -77,6 +77,25 @@ class Mentor extends CI_Controller {
 				echo $upload_photo_result['error'];
 			}
 		}
+	}
+
+	private function make_languages_string() {
+		if (!$_POST['languages'])
+		{
+			return '';
+		}
+
+		$language_arr = $_POST['languages'];
+		$languages_string = '';
+		foreach ($language_arr as $k=>$v){
+			$languages_string .= ($v . ",");
+		}
+
+		if ($_POST['languages_other'] && strlen(trim($_POST['languages_other'])) > 0)
+		{
+			$languages_string .= trim($_POST['languages_other']);
+		}
+		return $languages_string;
 	}
 
 	private function upload_photo_file() {
@@ -142,12 +161,12 @@ class Mentor extends CI_Controller {
 			array(
 				'field'   => 'email', 
 				'label'   => 'Primary Email Address', 
-				'rules'   => 'required|valid_email'//|is_unique[mentor.email]'
+				'rules'   => 'required'//|valid_email'//|is_unique[mentor.email]'
 			),
 			array(
 				'field'   => 'email2', 
 				'label'   => 'University Email Address', 
-				'rules'   => 'required|valid_email'
+				'rules'   => 'required'//|valid_email'
 			),
 			array(
 				'field'   => 'phone', 

@@ -24,7 +24,7 @@
 	</div>
 </div>
 	<div class="container">
-		<form id="mentorApplyForm" class="form form-horizontal clearfix" method="post" action="<?php echo base_url()?>/mentor/apply_exec" enctype="multipart/form-data">
+		<form id="mentorApplyForm" class="form form-horizontal clearfix" method="post" action="<?php echo base_url()?>mentor/apply_exec" enctype="multipart/form-data">
 
 			<div id="div-step1" class="clearfix">
 				<div class="span_left">
@@ -233,7 +233,7 @@
 							<select name="hearabout" id="hearabout">
 								<option value="Email" selected="selected"> Email </option>
 								<option value="Facebook"> Facebook </option>
-								<option value="ChaseFuture Strategy Consultant"> TopOffer Consultant </option>
+								<option value="TopOffer Strategy Consultant"> TopOffer Consultant </option>
 								<option value="Friend"> Friend </option>
 							</select>
 						</div>
@@ -265,7 +265,7 @@
 					<div class="form-actions">
 						<button type="button" class="btn btn-large btn-prev">&lt; Prev</button>
 						&nbsp;&nbsp;&nbsp;
-						<button id="btn_submit" type="summit" class="btn btn-success btn-large btn-next">Submit</button>
+						<button id="btn_submit" type="button" class="btn btn-success btn-large btn-next">Submit</button>
 					</div>
 				</fieldset>
 			</div> <!-- end of id="div-step2" -->
@@ -273,7 +273,7 @@
 			<div id="div-step4" class="span offset2">
 				<div class="alert alert-success">
 					<h3>Thank you for applying to join TopOffer!!</h3>
-					<a href="<?php echo base_url()?>/mentor/apply" class="btn btn-success">Back To Home Page</a><br>
+					<a href="<?php echo base_url()?>mentor/apply" class="btn btn-success">Back To Home Page</a><br>
 					<br>
 					<p>This message confirms that we have received your application. <br>
 					<br>
