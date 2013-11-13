@@ -18,7 +18,8 @@ class Mentor extends CI_Controller {
 
 
 	public function apply() {
-		$this->load->view('apply_form');
+		$this->load->view('success');
+		//$this->load->view('apply_form');
 	}
 
 	public function apply_exec() {
@@ -91,7 +92,7 @@ class Mentor extends CI_Controller {
 			$languages_string .= ($v . ",");
 		}
 
-		if ($_POST['languages_other'] && strlen(trim($_POST['languages_other'])) > 0)
+		if (!empty($_POST['languages_other']) && strlen(trim($_POST['languages_other'])) > 0)
 		{
 			$languages_string .= trim($_POST['languages_other']);
 		}

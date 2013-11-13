@@ -11,9 +11,11 @@
 	<title>Mentor apply - Top Offer Edu</title>
 </head>
 <body>
-	<div class="banner"><p>GLOBAL MENTORING</p></div>
-	<!--<div class="banner"><img src="<?php echo base_url()?>/public/img/banner.jpg" /></div>-->
-	<?php echo validation_errors(); ?>
+	<div class="left">
+		<div class="logo">
+			<img src="<?php echo base_url()?>/public/img/logo.jpg" /></div>
+		</div>
+	</div>
 	<div class="container">
 		<div id="div-step4" class="span offset2">
 			<div class="alert alert-success">

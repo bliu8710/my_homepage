@@ -19,10 +19,10 @@
 	<?php echo validation_errors(); ?>
 
 	<div class="left">
-	<div class="logo">
-		<img src="<?php echo base_url()?>/public/img/logo.jpg" /></div>
+		<div class="logo">
+			<img src="<?php echo base_url()?>/public/img/logo.jpg" /></div>
+		</div>
 	</div>
-</div>
 	<div class="container">
 		<form id="mentorApplyForm" class="form form-horizontal clearfix" method="post" action="<?php echo base_url()?>mentor/apply_exec" enctype="multipart/form-data">
 
